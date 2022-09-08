@@ -6,6 +6,7 @@ import Carousel from '../components/Carousel';
 import Categories from '../components/Categories';
 import Products from '../components/Products';
 import Newsletter from '../components/Newsletter';
+import Footer from '../layout/Footer';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Categories />
       <Products />
       <Newsletter />
+      <Footer />
     </>
   );
 };

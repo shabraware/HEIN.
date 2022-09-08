@@ -8,9 +8,10 @@
   body {
     @apply font-urbanist;
   }
-  /* li {
-    @apply p-4 text-xl;
+  li {
+    @apply px-2 py-1.5 text-lg;
   }
+  /*
   h1 {
     @apply text-3xl md:text-4xl font-bold;
   }
