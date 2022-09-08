@@ -5,11 +5,16 @@ import { Send } from '@mui/icons-material';
 const Newsletter = () => {
   return (
     <section className='bg-[#FDF5F6] py-32 px-8 flex flex-col items-center'>
-      <h2 className='font-bold text-7xl mb-10'>Newsletter</h2>
-      <p className='text-2xl mb-10'>
+      <h2 className='font-bold text-5xl sm:text-6xl md:text-7xl mb-10'>
+        Newsletter
+      </h2>
+      <p className='text-2xl mb-10 text-center'>
         Get timely updates from your favorite products
       </p>
-      <form action='' className='border rounded-lg overflow-hidden'>
+      <form
+        action=''
+        className='border rounded-lg overflow-hidden flex flex-nowrap'
+      >
         <input
           type='text'
           placeholder='Your email'
