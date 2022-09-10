@@ -7,7 +7,7 @@ import Announcement from '../layout/Announcement';
 import Footer from '../layout/Footer';
 import Newsletter from '../components/Newsletter';
 
-const ProductsList = () => {
+const SingleProduct = () => {
   return (
     <>
       <Announcement />
@@ -74,4 +74,4 @@ const ProductsList = () => {
   );
 };
 
-export default ProductsList;
+export default SingleProduct;

@@ -8,7 +8,7 @@ import Footer from '../layout/Footer';
 import Newsletter from '../components/Newsletter';
 import Title from '../components/Title';
 
-const ProductsList = () => {
+const ShoppingCategorie = () => {
   return (
     <>
       <Announcement />
@@ -22,4 +22,4 @@ const ProductsList = () => {
   );
 };
 
-export default ProductsList;
+export default ShoppingCategorie;
