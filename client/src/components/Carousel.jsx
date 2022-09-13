@@ -41,7 +41,13 @@ const Carousel = () => {
         <p className='tracking-wider mb-16 text-md md:text-xl'>
           don't compromise on style! get flat 30% off for new arrivals.
         </p>
-        <Link to='products' spy={true} smooth={true} offset={50} duration={500}>
+        <Link
+          to='categories'
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
           <button className='border p-3 bg-white text-black text-lg hover:bg-teal-600 hover:border-none hover:text-white transition ease-out	duration-500'>
             Shop Now <ArrowRight />
           </button>
