@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 
 import { ArrowLeft, ArrowRight } from '@mui/icons-material';
+import { Link } from 'react-scroll';
+
 const CAROUSEL_DATA = [
-  {
-    url: 'https://images.unsplash.com/photo-1550995694-3f5f4a7e1bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
-  },
   {
     url: 'https://images.unsplash.com/photo-1523380744952-b7e00e6e2ffa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
   },
   {
-    url: 'https://images.unsplash.com/photo-1577686323569-40b90424099b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80',
+    url: 'https://images.unsplash.com/photo-1550995694-3f5f4a7e1bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80',
   },
 ];
 const Carousel = () => {
@@ -42,9 +41,11 @@ const Carousel = () => {
         <p className='tracking-wider mb-16 text-md md:text-xl'>
           don't compromise on style! get flat 30% off for new arrivals.
         </p>
-        <button className='border px-4 py-2 hover:bg-white hover:text-black transition text-md md:text-xl'>
-          Shop Now <ArrowRight />
-        </button>
+        <Link to='products' spy={true} smooth={true} offset={50} duration={500}>
+          <button className='border p-3 bg-white text-black text-lg hover:bg-teal-600 hover:border-none hover:text-white transition ease-out	duration-500'>
+            Shop Now <ArrowRight />
+          </button>
+        </Link>
       </div>
       <div
         onClick={incrementIndex}
