@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import Navbar from '../layout/Navbar';
+import { useParams } from 'react-router-dom';
+
 import Announcement from '../layout/Announcement';
-import Filter from '../components/Filter';
-import Products from '../components/Products';
+import Navbar from '../layout/Navbar';
 import Footer from '../layout/Footer';
+import Products from '../components/Products';
 import Newsletter from '../components/Newsletter';
 import Title from '../components/Title';
 
 const ShoppingCategorie = () => {
+  const { category } = useParams();
+
   return (
     <>
       <Announcement />
       <Navbar />
-      <Title>Dresses</Title>
-      <Filter />
-      <Products /> {/* Pass the products i want to show to this component */}
+      <Title>{`${category.charAt(0).toUpperCase()}${category.slice(1)}`}</Title>
+      <Products category={category} filter={filter} />
       <Newsletter />
       <Footer />
     </>

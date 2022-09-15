@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Categorie = ({ name, image }) => {
   return (
-    <figure className='relative'>
-      <Link to={`/categories/${name.toLowerCase()}`}>
+    <Link to={`/categories/${name.toLowerCase()}`}>
+      <figure className='relative'>
         <img
           src={image}
           alt={name}
@@ -19,8 +19,8 @@ const Categorie = ({ name, image }) => {
             Shop Now
           </button>
         </figcaption>
-      </Link>
-    </figure>
+      </figure>
+    </Link>
   );
 };
 

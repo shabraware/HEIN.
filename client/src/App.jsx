@@ -18,7 +18,7 @@ const App = () => {
       <Route path='/categories/:category'>
         <ShoppingCategorie />
       </Route>
-      <Route path='/products/:productId'>
+      <Route path='/products/:id'>
         <SingleProduct />
       </Route>
       <Route path='/cart'>
