@@ -17,7 +17,7 @@ const ShoppingCategorie = () => {
       <Announcement />
       <Navbar />
       <Title>{`${category.charAt(0).toUpperCase()}${category.slice(1)}`}</Title>
-      <Products category={category} filter={filter} />
+      <Products category={category} />
       <Newsletter />
       <Footer />
     </>

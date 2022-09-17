@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 import { Add, Remove } from '@mui/icons-material';
 import { useParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 import { publicRequest } from '../request-methods';
+import { addProduct } from '../store/cart-slice';
 
 import Navbar from '../layout/Navbar';
 import Announcement from '../layout/Announcement';
@@ -12,9 +14,10 @@ import Newsletter from '../components/Newsletter';
 
 const SingleProduct = () => {
   const { id } = useParams();
+  const dispatch = useDispatch();
   const [product, setProduct] = useState({});
   let [quantity, setQuantity] = useState(1);
-  let [size, setSize] = useState('');
+  let [size, setSize] = useState('S');
   const getProduct = async () => {
     try {
       const url = `/products/${id}`;
@@ -28,7 +31,7 @@ const SingleProduct = () => {
     setSize(e.target.value);
   };
   const addToCartHandler = () => {
-    console.log('clicked...');
+    dispatch(addProduct({ product, size, quantity }));
   };
   useEffect(() => {
     getProduct();
@@ -55,7 +58,6 @@ const SingleProduct = () => {
                 Size
               </label>
               <select onChange={sizeChangeHandler}>
-                <option value=''>Size</option>
                 {product.size?.map((item) => (
                   <option key={item} value={item}>
                     {item}

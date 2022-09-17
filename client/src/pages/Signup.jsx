@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Login = () => {
+import { Link } from 'react-router-dom';
+
+const Signup = () => {
   return (
     <div className='px-4 w-full h-screen flex justify-center items-center bg-login bg-no-repeat bg-cover'>
       <form
@@ -53,9 +55,12 @@ const Login = () => {
           </a>
         </p>
         <button className='mb-4 bg-teal-700 text-white p-2'>Create</button>
+        <Link to='/login' className='capitalize underline mb-4'>
+          Already have an account
+        </Link>
       </form>
     </div>
   );
 };
 
-export default Login;
+export default Signup;
