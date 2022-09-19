@@ -81,6 +81,7 @@ $ npm run build
 - **ExpressJS**
 - **MongoDB**
 - **TailwindCSS**
+- **Stripe**
 
 ## 📂 File Structure
 
