@@ -5,32 +5,66 @@ Inspired by [_Lama Dev_](https://www.youtube.com/c/LamaDev)
 
 ## 🏁 Get Started
 
-### Installation
-
 1. **_Clone the repository_**
 
 ```sh
 git clone https://github.com/YousefElshabrawy/HEIN..git
 ```
 
-2. **_Navigate to repository directory_**
+2. **_Navigate to the repository directory_**
 
 ```sh
 $ cd HEIN.
 ```
 
-3. **_Install dependencies_**
+### 💻 Client
+
+1. **_Navigate to the client directory_**
+
+```sh
+$ cd client
+```
+
+2. **_Install dependencies_**
 
 ```sh
 $ npm install
 ```
 
-### Running
+#### Running
 
 1. **_Compile and hot-reload for development_**
 
 ```sh
 $ npm run dev
+```
+
+2. **_Compile for production_**
+
+```sh
+$ npm run build
+```
+
+### 💻 Server
+
+1. **_Navigate to the server directory_**
+
+```sh
+$ cd server
+```
+
+2. **_Install dependencies_**
+
+```sh
+$ npm install
+```
+
+#### Running
+
+1. **_Compile and hot-reload for development_**
+
+```sh
+$ npm run start
 ```
 
 2. **_Compile for production_**
